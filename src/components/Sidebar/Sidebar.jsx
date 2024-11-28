@@ -63,7 +63,7 @@ const SidebarContainer = styled.aside`
 const LogoContainer = styled.header`
     display: flex;
     align-items: center;
-    margin: 30px 0;
+    position : absolute;
 `;
 
 const Logo = styled.img`
@@ -85,8 +85,8 @@ const Title = styled.h1`
 `;
 
 const ToggleButton = styled.div`
-    position: absolute;
-    left: ${(props) => (props.$isOpened ? "16%" : "10%")};
+    position: relative;
+    right: ${(props) => (props.$isOpened ? "-20%" : "-40%")};
     width: 25px;
     height: 25px;
     padding: 4px;
@@ -105,6 +105,7 @@ const ToggleButton = styled.div`
 `;
 
 const Ul = styled.ul`
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     gap: 20px;
