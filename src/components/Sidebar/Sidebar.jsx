@@ -86,7 +86,7 @@ const Title = styled.h1`
 
 const ToggleButton = styled.div`
     position: absolute;
-    left: ${(props) => (props.$isOpened ? "21%" : "10%")};
+    left: ${(props) => (props.$isOpened ? "16%" : "10%")};
     width: 25px;
     height: 25px;
     padding: 4px;
